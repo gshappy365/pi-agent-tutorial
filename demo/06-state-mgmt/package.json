@@ -1,0 +1,10 @@
+{
+  "name": "@tutorial/demo-state-mgmt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@tutorial/shared": "*",
+    "@sinclair/typebox": "^0.34.0"
+  }
+}

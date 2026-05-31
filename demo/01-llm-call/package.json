@@ -1,0 +1,9 @@
+{
+  "name": "@tutorial/demo-llm-call",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@tutorial/shared": "*"
+  }
+}

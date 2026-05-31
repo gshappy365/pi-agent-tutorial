@@ -1,0 +1,33 @@
+{
+  "name": "tutorial-demos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "01-llm-call",
+    "02-tool-def",
+    "03-agent-loop",
+    "04-stream",
+    "05-multi-tool",
+    "06-state-mgmt",
+    "07-error-handling",
+    "08-context"
+  ],
+  "scripts": {
+    "demo:1": "tsx 01-llm-call/src/index.ts",
+    "demo:2": "tsx 02-tool-def/src/index.ts",
+    "demo:3": "tsx 03-agent-loop/src/index.ts",
+    "demo:4": "tsx 04-stream/src/index.ts",
+    "demo:5": "tsx 05-multi-tool/src/index.ts",
+    "demo:6": "tsx 06-state-mgmt/src/index.ts",
+    "demo:7": "tsx 07-error-handling/src/index.ts",
+    "demo:8": "tsx 08-context/src/index.ts",
+    "test": "tsx --test 'shared/src/**/*.test.ts' '03-agent-loop/src/**/*.test.ts' '08-context/src/**/*.test.ts'",
+    "test:watch": "tsx --test --watch 'shared/src/**/*.test.ts' '03-agent-loop/src/**/*.test.ts' '08-context/src/**/*.test.ts'"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
